@@ -1,0 +1,114 @@
+.filters {
+  box-sizing: border-box;
+  background: #fff !important;
+  border-radius: 0.2em;
+  margin: 0 1em 1em 1em;
+  padding-bottom: 1em;
+
+  &__title {
+    padding: 2.5em 2em 0;
+    color: #777777;
+  }
+
+  &__form {
+    padding: .5em 0 2.5em;
+
+    .anticon svg {
+      color: #585858;
+      font-size: 110%;
+    }
+  }
+
+  &__form-item {
+    margin: 1.5em 0;
+    padding: 0 2em 0 !important;
+
+    .ant-form-item-label {
+      padding-right: 1.75em;
+    }
+
+    .ant-form-item-control {
+      width: calc(100% - 1.75em);
+    }
+  }
+
+  .ant-row {
+    flex-flow: row nowrap !important;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+  }
+
+  &__reload-button {
+    color: #585858;
+    border: none !important;
+    box-shadow: none;
+  }
+
+  &__reload-button:hover {
+    border: none;
+    box-shadow: none;
+  }
+
+  &__reload-button:focus {
+    color: #585858;
+  }
+
+  &__clear-button {
+    color: #585858;
+    border: none !important;;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  &__clear-button:hover {
+    border: none;
+    box-shadow: none;
+  }
+
+  &__clear-button:focus {
+    color: #585858;
+  }
+
+  .ant-btn:focus {
+    color: unset !important;
+  }
+
+  .ant-btn {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  [ant-click-animating-without-extra-node='true']::after {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .filters {
+    margin: 0;
+    height: 100%;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .filters {
+    .ant-form .ant-form-item .ant-form-item-label {
+      flex: 0 0 0;
+    }
+
+    .ant-form .ant-form-item .ant-form-item-control {
+      flex: 0 0 85%;
+    }
+  }
+}
+
+
+
+
+

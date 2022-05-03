@@ -1,0 +1,147 @@
+.summary {
+  //margin-top: 30px !important;
+
+  &__radio {
+    height: max-content !important;
+    //padding: 0 1em 0 0 !important;
+    margin: 0 10px 0 0 !important;
+
+    &_title {
+      color: #777777;
+      font-size: 12px;
+      margin-bottom: -5px;
+    }
+
+    &_stat {
+      font-size: 22px;
+    }
+  }
+
+  .ant-radio-button-wrapper,
+  .ant-radio-button-wrapper:hover {
+    line-height: unset !important;
+    white-space: nowrap !important;
+    cursor: pointer !important;
+    border: 0 !important;
+    padding-left: 0 !important;
+    //padding-right: 10px !important;
+  }
+
+  .ant-radio-button-wrapper::before,
+  .ant-radio-button-wrapper:first-child,
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    background-color: transparent !important;
+  }
+
+  label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked.summary {
+    &_radio {
+      transition: border .1s step-start !important;
+    }
+  }
+
+  label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked.summary {
+    &__radio {
+      &_disabled {
+        color: #777777 !important;
+      }
+
+      &_requests {
+        color: #4594df !important;
+        border-right: 3px solid #4594df !important;
+      }
+
+      &_bid-requests {
+        color: #937ab5 !important;
+        border-right: 3px solid #937ab5 !important;
+      }
+
+      &_impressions {
+        color: #01a5a9 !important;
+        border-right: 3px solid #01a5a9 !important;
+      }
+
+      &_revenue {
+        color: #6678f6 !important;
+        border-right: 3px solid #6678f6 !important;
+      }
+
+      &_eCPM {
+        color: #f5895c !important;
+        border-right: 3px solid #f5895c !important;
+      }
+
+      &_bid_rate {
+        color: #5ebb8b !important;
+        border-right: 3px solid #5ebb8b !important;
+      }
+
+      &_win_rate {
+        color: #4bb6ec !important;
+        border-right: 3px solid #4bb6ec !important;
+      }
+
+      &_bid_price {
+        color: #f45b5b !important;
+        border-right: 3px solid #f45b5b !important;
+      }
+
+      &_timeout_rate {
+        color: #e99e39 !important;
+        border-right: 3px solid #e99e39 !important;
+      }
+    }
+  }
+
+  .ant-radio-button-wrapper:hover.summary {
+    &__radio {
+      &_requests {
+        color: #4594df !important;
+      }
+
+      &_bid-requests {
+        color: #937ab5 !important;
+      }
+
+      &_impressions {
+        color: #01a5a9 !important;
+      }
+
+      &_revenue {
+        color: #6678f6 !important;
+      }
+
+      &_eCPM {
+        color: #f5895c !important;
+      }
+
+      &_bid_rate {
+        color: #5ebb8b !important;
+      }
+
+      &_win_rate {
+        color: #4bb6ec !important;
+      }
+
+      &_bid_price {
+        color: #f45b5b !important;
+      }
+
+      &_timeout_rate {
+        color: #e99e39 !important;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .summary {
+    display: flex !important;
+    //height: 450px;
+    //margin-top: 39px !important;
+    flex-direction: column !important;
+    width: max-content !important;
+  }
+}
+
+

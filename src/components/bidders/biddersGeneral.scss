@@ -1,0 +1,46 @@
+.bidders-general {
+  text-align: center;
+  margin: 0 1em 0 0;
+  background: #fff !important;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em 2.5em ;
+  border-radius: 0.2em;
+
+  &__chart-header {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    div:last-child {
+      position: absolute;
+      top: 25px;
+      right: 0;
+    }
+  }
+
+  &__title {
+    margin: 1.5em 0 !important;
+    color: #777777;
+  }
+
+  &__select {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 1.5em !important;
+    font-size: 16px !important;
+    color: #777777;
+
+    .ant-select-selection-item {
+      font-weight: 600;
+    }
+  }
+
+  &__chart {
+    margin-bottom: 1.5em;
+  }
+}

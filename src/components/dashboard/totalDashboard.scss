@@ -1,0 +1,25 @@
+.dashboard-page {
+  display: flex;
+  flex-flow: column;
+  background: #f0f2f5;
+  padding: 1em;
+
+  &__chart-row {
+    background: #fff !important;
+    padding: 2.5em 2.5em 1em;
+    border-radius: 0.2em;
+    flex-grow: 1;
+    margin: 0 1em 1em 0;
+    display: flex;
+    flex-flow: column;
+
+    &_no-mb {
+      margin-bottom: 0 !important;
+      flex-grow: 1;
+      padding: 0 1em 0 0;
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
+}

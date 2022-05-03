@@ -1,0 +1,19 @@
+.help {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.help-body {
+  max-width: 650px;
+  div p {
+    margin-bottom: 5px;
+  }
+
+  div i {
+    font-weight: 600;
+  }
+
+  &__close {
+    float: right;
+  }
+}

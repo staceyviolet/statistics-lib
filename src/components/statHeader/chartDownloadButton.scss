@@ -1,0 +1,15 @@
+.chart-download-dropdown {
+  border: 1px solid #959595 !important;
+  li {
+    cursor: pointer;
+    padding: 0.5em 1em !important;
+    color: rgb(51, 51, 51);
+    background: none;
+    font-size: 11px;
+  }
+
+ .ant-dropdown-menu-item-divider {
+    color: #333333 !important;
+   line-height: 1px;
+  }
+}
