@@ -13,7 +13,7 @@ yarn add highcharts
 
 * To install the library run
 ```sh
-yarn add ssh://git@github.com:staceyviolet/statistics-lib.git
+yarn add https://github.com/staceyviolet/statistics-lib.git
 ```
 
 The installation process could take some time, don't be afraid, it is normal
@@ -21,7 +21,7 @@ The installation process could take some time, don't be afraid, it is normal
 * To update the library run
 ```sh
 yarn remove statistics-lib
-yarn add ssh://git@github.com:staceyviolet/statistics-lib.git
+yarn add https://github.com/staceyviolet/statistics-lib.git
 ```
 
 ## Usage
@@ -41,16 +41,45 @@ Mount the components:
 dashboard:
 ```sh
 <TotalDashboard
-    token="TjBuTjZZYVhSL2p1eGVUZ2tEejN3QT09OjRLSUhGQkhGZDNwczF1UEJrTEZZU0E9PQ"
-    apiUrl="http://localhost:8080"
-    onAccessError={() => console.log('error here')}
-/>
+            token={token}
+            apiUrl={apiUrl}
+            onAccessError={() => console.log('error here')}
+            profileCurrency={"USD"}
+          />
 ```
-report:
+bidders:
 ```sh
-<Report
-    token="TjBuTjZZYVhSL2p1eGVUZ2tEejN3QT09OjRLSUhGQkhGZDNwczF1UEJrTEZZU0E9PQ"
-    apiUrl="http://localhost:8080"
-    onAccessError={() => console.log('error here')}
-/>
+<BiddersComponent
+              token={token}
+              apiUrl={apiUrl}
+              onAccessError={() => console.log('error here')}
+              profileCurrency={"USD"}
+            />
+```
+sites:
+```sh
+<SitesComponent
+              token={token}
+              apiUrl={apiUrl}
+              onAccessError={() => console.log('error here')}
+              profileCurrency={"USD"}
+            />
+```
+auctions report:
+```sh
+<AuctionsReportScreen
+              token={token}
+              apiUrl={apiUrl}
+              onAccessError={() => console.log('error here')}
+              profileCurrency={"USD"}
+            />
+```
+revenue report:
+```sh
+<RevenueReportScreen
+              token={token}
+              apiUrl={apiUrl}
+              onAccessError={() => console.log('error here')}
+              profileCurrency={"USD"}
+            />
 ```
