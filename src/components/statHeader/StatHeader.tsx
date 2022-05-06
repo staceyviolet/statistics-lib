@@ -2,11 +2,11 @@ import { LeftOutlined } from '@ant-design/icons'
 import { Button, Radio, Select, DatePicker } from 'antd'
 import { useEffect, useState } from 'react'
 import * as React from 'react'
-import './statHeader.scss'
 import { ChartDownloadButton } from './ChartDownloadButton'
 import { Help } from './Help'
+import './statHeader.scss'
 
-const { RangePicker } = DatePicker
+const { RangePicker }: any = DatePicker
 const { Option } = Select
 
 interface Props {
